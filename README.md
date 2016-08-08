@@ -2,20 +2,20 @@
 
 This project has developed using Sping Tool Suite 3.8.1 RELEASE . Following are the software requirements for this project.
 
-1) JDK 1.8
-2) Spring Boot : v1.4.0.RELEASE
-3) Maven Build
+1) JDK 1.8<br>
+2) Spring Boot : v1.4.0.RELEASE<br>
+3) Maven Build<br>
 4) Spring Boot Tomcat Embedded Server
 
 
 Instructions to Deploy:
 ----------------------------------
 
-1) Import project from GIT to STS
-2) Verify JDK and JRE settings. 
-3) Run --> Maven install
-4) Make sure all test cases completed successfully
-5) Run --> AdWebApplication.java as a SpringBoot/Java application. This must start the deployment process to embedded tomcat server
+1) Import project from GIT to STS <br>
+2) Verify JDK and JRE settings. <br>
+3) Run --> Maven install<br>
+4) Make sure all test cases completed successfully<br>
+5) Run --> AdWebApplication.java as a SpringBoot/Java application. This must start the deployment process to embedded tomcat server<br>
 6) Launch the application from http://localhost:8080/addemo/*
 
 
@@ -24,10 +24,10 @@ Testing
 
 Two REST controllers created 
 
-1) AdWebController - Holds data in-memory. End point addemo/* .
+1) AdWebController - Holds data in-memory. End point addemo/* .<br>
 2) AdWebCacheController - Cache the data using default EhCache. End point addemo/cache/* .
 
-SOAPUI test cases and results:
+<b>SOAPUI test cases and results:  </b>
 
 1) http://localhost:8080/addemo/postad
 
