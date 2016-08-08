@@ -1,4 +1,4 @@
-# AdCampaign
+# Ad Campaign Demo Application
 
 This project has developed using Sping Tool Suite 3.8.1 RELEASE . Following are the software requirements for this project.
 
@@ -8,7 +8,7 @@ This project has developed using Sping Tool Suite 3.8.1 RELEASE . Following are 
 4) Spring Boot Tomcat Embedded Server
 
 
-Instructions to Deploy:
+## Instructions to Deploy: ##
 ----------------------------------
 
 1) Import project from GIT to STS <br>
@@ -19,7 +19,7 @@ Instructions to Deploy:
 6) Launch the application from http://localhost:8080/addemo/*
 
 
-Testing
+## Testing ##
 ----------------
 
 Two REST controllers created 
@@ -32,19 +32,17 @@ Two REST controllers created
 1) http://localhost:8080/addemo/postad
 
 Request:
-
+```json
 {
-
 "partner_id":"45",
 "duration":"60",
 "ad_content":"This is my first ad !!"
-	
 }
-
-
+```
 
 Response: 
 
+```json
 {
    "ad":    {
       "partner_id": "45",
@@ -60,7 +58,7 @@ Response:
    }
 }
 
-
+```
 
 2) http://localhost:8080/
 
@@ -68,7 +66,7 @@ Response:
 
 
 2.1 Response: 
-
+```json
 {
    "ad": null,
    "adList": null,
@@ -78,12 +76,12 @@ Response:
       "userMsg": "No ad campaigns exist for the pertner 323"
    }
 }
-
+```
 2.2 Request:  /addemo/ad/45
 
 
 2.2 Response: 
-
+```json
 {
    "ad":    {
       "partner_id": "45",
@@ -94,12 +92,13 @@ Response:
    "adList": null,
    "error": null
 }
-
+```
 2.3 Request:  /addemo/ad/45 (After 60 secs)
 
 
 2.3 Response: 
 
+```json
 {
    "ad": null,
    "adList": null,
@@ -109,7 +108,7 @@ Response:
       "userMsg": "No active ad campaigns exist for the pertner 45"
    }
 }
-
+```
 
 3) http://localhost:8080
 
@@ -117,7 +116,7 @@ Request: /addemo/ad
 
 
 Response: 
-
+```json
 {
    "ad": null,
    "adList":    [
@@ -142,4 +141,4 @@ Response:
    ],
    "error": null
 }
-
+```
